@@ -4,8 +4,9 @@
 
 if not ... then require'ringbuffer2_demo'; return end
 
-local min, max, band, assert = math.min, math.max, bit.band, assert
+local bit = require'bit'
 local ffi --load at runtime to allow module to load in Lua 5.1
+local min, max, band, assert = math.min, math.max, bit.band, assert
 
 --select the offset normalization function to use: if the buffer size
 --is a power-of-2, we can normalize offsets faster.
