@@ -1,5 +1,5 @@
 
--- uni-directional cdata ring buffers.
+-- uni-directional ring buffers that can grow on request.
 -- Written by Cosmin Apreutesei. Public Domain.
 
 if not ... then require'ringbuffer2_demo'; return end
